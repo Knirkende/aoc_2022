@@ -1,0 +1,1 @@
+print(len([m for m in [(set(t for t in range(int(z[0].split('-')[0]), int(z[0].split('-')[1]) + 1)).intersection(set(s for s in range(int(z[1].split('-')[0]), int(z[1].split('-')[1]) + 1))))for z in [x.strip().split(",") for x in open('inp.txt').readlines()]] if len(list(m)) > 0]))
