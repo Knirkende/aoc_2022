@@ -4,7 +4,7 @@ import java.util.*;
 import java.util.stream.Stream;
 import java.util.stream.Collectors;
 
-class DaySix {
+class DayEight {
 
     private static List<List<Integer>> verticalTrees = new ArrayList<List<Integer>>();
     private static List<List<Integer>> visibleTrees = new ArrayList<List<Integer>>(); // [(X, Y), (X, Y)]
