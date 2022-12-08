@@ -7,7 +7,6 @@ import java.util.stream.Collectors;
 class DaySix {
 
     private static List<List<Integer>> verticalTrees = new ArrayList<List<Integer>>();
-    private static List<List<Integer>> horizontalTrees = new ArrayList<List<Integer>>();
     private static List<List<Integer>> visibleTrees = new ArrayList<List<Integer>>(); // [(X, Y), (X, Y)]
     private static List<List<Integer>> invertedVisibleTrees = new ArrayList<List<Integer>>();
 
@@ -37,23 +36,11 @@ class DaySix {
         for (int i = 0; i < verticalTrees.size(); i++) {
             scanTreeLine(verticalTrees.get(i), i);
         }
-        System.out.println(invertedVisibleTrees);
         int sum = 0;
         for (int i = 0; i < invertedVisibleTrees.size(); i++) {
             sum += invertedVisibleTrees.get(i).stream().mapToInt(Integer::intValue).sum();
         }
         System.out.println(sum);
-
-        // part 2
-        int maxView = 1;
-        for (int i = 0; i < verticalTrees.size(); i++) {
-            for (int j = 0; j < verticalTrees.get(i).size(); j++) {
-                int val = verticalTrees.get(i).get(j);
-                System.out.println(val);
-            }
-        }
-
-        System.out.println(verticalTrees);
 
     }
 
