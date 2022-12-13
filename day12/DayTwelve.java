@@ -5,8 +5,6 @@
 // A*
 // keep a frontier (priority queue) with number of steps so far
 // (int) c
-//sequence of 4 different characters
-//num chars from beginning to end of first seq of 4 different chars
 //no, actually do bfs w path costs
 
 import java.io.File;
